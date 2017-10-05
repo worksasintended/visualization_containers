@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Mayavi 2
+Icon=
+Exec=vglrun mayavi2

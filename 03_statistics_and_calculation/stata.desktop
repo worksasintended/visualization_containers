@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Stata 13 SE
+Icon=/opt/stata/stata13.png
+Exec=vglrun /opt/stata/xstata
+Terminal=false
+Path=/opt/stata

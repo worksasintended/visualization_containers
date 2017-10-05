@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=GNU Octave
+Icon=/usr/share/octave/4.0.0/imagelib/octave-logo.svg
+Exec=vglrun /usr/bin/octave
+Terminal=true

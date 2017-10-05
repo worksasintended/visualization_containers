@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=visit
+Icon=/opt/visit/2.12.0/linux-x86_64/resources/images/VisIt1.png
+Exec=vglrun /opt/visit/bin/visit

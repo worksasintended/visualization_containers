@@ -1,0 +1,4 @@
+  /usr/bin/nvidia-xconfig --query-gpu-info | \
+          grep BusID | \
+          cut -d \  -f6 | \
+          xargs -I{} nvidia-xconfig --use-display-device=none --busid={}

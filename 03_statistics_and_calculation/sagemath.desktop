@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sagemath
+Icon=/usr/lib/sagemath/icon48x48.png
+Terminal=true
+Exec=vglrun /usr/bin/sage -notebook

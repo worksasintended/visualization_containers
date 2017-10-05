@@ -1,0 +1,17 @@
+#!/bin/bash
+/sbin/my_init &
+/tmp/init_xorg
+useradd -G users -o -u $uid $user -s /bin/bash
+echo "$user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+mkdir -p /home/$user/.vnc; printf "$pw" |/opt/TurboVNC/bin/vncpasswd -f > /home/$user/.vnc/passwd
+chmod 600 /home/$user/.vnc/passwd
+chown -R $user /home/$user/.vnc
+cp /tmp/xstartup.turbovnc /home/$user/.vnc/
+chown $user /home/$user/.vnc/xstartup.turbovnc
+chown $user /home/$user
+mkdir -p /home/$user/Desktop
+cp /tmp/*.desktop /home/$user/Desktop/
+chown $user /home/$user/Desktop
+chown $user /home/$user/Desktop/*
+/usr/bin/X  > /dev/null &
+runuser -l $user -c "/opt/TurboVNC/bin/vncserver -fg -autokill"

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=RStudio
+Icon=rstudio
+Exec=vglrun /usr/lib/rstudio/bin/rstudio %F

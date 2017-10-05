@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=gretl
+Icon=gretl
+Terminal=false
+Exec=vglrun /usr/bin/gretl %f

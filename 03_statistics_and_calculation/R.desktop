@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=R
+Icon=rlogo_icon
+Exec=vglrun R
+Terminal=true
